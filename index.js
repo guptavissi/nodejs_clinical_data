@@ -16,10 +16,10 @@ app.use(express.json({ limit: '5mb' }));
 //         return res.send({ value: value })
 //     }, 5000);
 // })
-// app.get('/test2', (req, res) => {
-//     value = 10;
-//     return res.send({ value: value })
-// })
+app.get('/test2', (req, res) => {
+    value = 10;
+    return res.send({ message: "Connected Test API  2" })
+})
 
 app.use('/api', routes);
 

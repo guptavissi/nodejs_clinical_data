@@ -3,6 +3,7 @@ const { Op } = require('sequelize');
 const { Patient, ClinicalData, sequelize } = require("../configs/db");
 
 async function heartbeatReportRaw(req, res) {
+   console.log('api heartbeatReportRaw');
    // let heartbeatData = req.body?.clinical_data?.HEART_RATE?.data;
    if (!(req.body?.clinical_data?.HEART_RATE?.data)) return res.status(400).send('Invalid request payload of heartbeat reading or no heartbeat data found');
    let save = false;
