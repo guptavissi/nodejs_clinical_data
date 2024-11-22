@@ -1,0 +1,16 @@
+{
+  "name": "heartbeat_monitor",
+  "version": "1.0.0",
+  "description": "measure and report heartbeat of certain time frame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vishal Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5"
+  }
+}
